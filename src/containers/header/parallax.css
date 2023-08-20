@@ -1,0 +1,52 @@
+.cv__header-container-parallax {
+    z-index: 1;
+    position: absolute;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cv__header-container-parallax div {
+    width: 100%;
+    height: 100vh;
+  }
+  .parallax_img {
+    width: 100px;
+    height: auto;
+    position: absolute;
+  }
+  #parallax_img_0 {
+    left: 78%;
+    bottom: 40%;
+  }
+  #parallax_img_1 {
+    left: 85%;
+    bottom: 85%;
+  }
+  #parallax_img_2 {
+    left: 75%;
+    bottom: 15%;
+  }
+  #parallax_img_3 {
+    left: 5%;
+    bottom: 85%;
+  }
+  #parallax_img_4 {
+    left: 12%;
+    bottom: 30%;
+  }
+  #parallax_img_5 {
+    left: 22%;
+    bottom: 60%;
+  }
+  #parallax_img_6 {
+    left: 70%;
+    bottom: 65%;
+  }
+
+  #parallax_img_7 {
+    left: 51%;
+    bottom: 85%;
+  }
