@@ -3,35 +3,52 @@ import Parallax from 'parallax-js';
 import './header.css';
 import './parallax.css';
 import './self-typing.css';
-import Navbar from '../../components/navbar/Navbar';
-import avatar from '../../assets/header_avatar.svg';
-import images from '../index.js'; // Your images folder location
 import "./self-typing.js"
+
+import Navbar from '../../components/navbar/Navbar'
+import Social from '../../components/social/Social'
+
+
+import imageExports from '../index'; // Adjust the path accordingly
+
+import avatar from '../../assets/header_avatar.svg';
+
 import { FaFacebookSquare } from 'react-icons/fa'
 import { BsInstagram, BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs'
 
 
+import { useTranslation } from 'react-i18next'
+
 
 const Header = () => {
   const parallaxContainerRef = useRef(null);
+  const images  = imageExports.images;
+
+  const { t } = useTranslation();
 
   useEffect(() => {
-    // Initialize the parallax effect
     const parallaxInstance = new Parallax(parallaxContainerRef.current, {
       relativeInput: true, // Enable relative input mode
       clipRelativeInput: true, // Clip input to bounds of the container
     });
-
-    // Clean up the parallax effect on component unmount
     return () => {
       parallaxInstance.destroy();
     };
   }, []);
 
+  const socialData = [
+    { icon:BsGithub, iconName:"github", linkRedirect:"www.github.com/bombel1337"},
+    { icon:BsInstagram, iconName:"instagram", linkRedirect:"www.instagram.com/przygodajacob/" },
+    { icon:BsTwitter, iconName:"twitter", linkRedirect:"www.twitter.com/2115_bombel"},
+    { icon:BsLinkedin, iconName:"linkedin", linkRedirect:"www.linkedin.com/in/przygodajacob" },
+    { icon:FaFacebookSquare, iconName:"facebook", linkRedirect:"www.facebook.com/przygodajacob" },
+  ];
+
+
   return (
     <div className="cv__header" id="home">
       <Navbar />
-      <div className="cv__header-container">
+      <div className="cv__header-container scale-up-center">
         <div className="cv__header-container-info">
           <div className="cv__header-container-info-avatar">
             <img src={avatar} alt="Jacob" />
@@ -45,19 +62,23 @@ const Header = () => {
            </p>
           </div>
           <div className='cv__header-container-info__social'>
-              <div cv__header-container-info__social-github><BsGithub/></div>
-              <div cv__header-container-info__social-instagram><BsInstagram/></div>
-              <div cv__header-container-info__social-twitter><BsTwitter/></div>
-              <div cv__header-container-info__social-linkedin><BsLinkedin/></div>
-              <div cv__header-container-info__social-facebook><FaFacebookSquare/></div>
+          {socialData.map((data, index) => (
+              <Social
+                key={index}
+                icon={data.icon}
+                iconName={data.iconName}
+                linkRedirect={data.linkRedirect}
+                index={index}
+              />
+           ))}
           </div>
           <div className='cv__header-container-info-hire-me scale-up-center'>
-              <button className='btn from-top' type='button'>Hire me</button>
+              <button className='btn from-top' type='button'>{t("header_hire-me")}</button>
           </div> 
         </div>
         <div className="cv__header-container-scroll">
           <div className='cv__header-container-scroll-text'>
-            <p>Scroll Down</p>
+            <p>{t("header_scroll-down")}</p>
           </div>
           <div className='cv__header-container-scroll-text-wheel'>
             <div className='cv__header-container-scroll-text-wheel-dot' ></div>
@@ -74,7 +95,7 @@ const Header = () => {
               <img
               left
                 src={imageSrc}
-                className={`parallax_img`}
+                className={`parallax_img scale-up-center`}
                 id={`parallax_img_${index}`}
                 alt={`parallax_img_${index}`}
               />

@@ -18,15 +18,21 @@ var _PART_INDEX = 0;
 // Holds the handle returned from setInterval
 var _INTERVAL_VAL;
 
-// Element that holds the text
 var _ELEMENT = document.querySelector("#text");
+
 
 // Cursor element 
 var _CURSOR = document.querySelector("#cursor");
 
 // Implements typing effect
 function Type() { 
+	// Element that holds the text
+	var _ELEMENT = document.querySelector("#text");
+	// Cursor element 
+	var _CURSOR = document.querySelector("#cursor");
+
 	// Get substring with 1 characater added
+	console.log(_ELEMENT);
 	var text =  _CONTENT[_PART].substring(0, _PART_INDEX + 1);
 	_ELEMENT.innerHTML = text;
 	_PART_INDEX++;
@@ -55,7 +61,7 @@ function Delete() {
 		clearInterval(_INTERVAL_VAL);
 
 		// If current sentence was last then display the first one, else move to the next
-		if(_PART == (_CONTENT.length - 1))
+		if(_PART === (_CONTENT.length - 1))
 			_PART = 0;
 		else
 			_PART++;
@@ -71,4 +77,5 @@ function Delete() {
 }
 
 // Start the typing effect on load
-_INTERVAL_VAL = setInterval(Type, 150);  });
+_INTERVAL_VAL = setInterval(Type, 150); 
+ });

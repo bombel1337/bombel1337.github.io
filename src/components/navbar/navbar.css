@@ -1,3 +1,7 @@
+.cv__header {
+    background-color: transparent;
+
+}
 .cv__navbar-desktop__container {
     width: 290px;
     border-right: 1px solid hsla(0,0%,100%,.1);
@@ -22,6 +26,25 @@
     align-items: flex-start
 
 }
+.cv__navbar-language-selector{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+}
+.cv__navbar-language-selector-flag .active {
+    opacity: 0.5;
+}
+
+.cv__navbar-language-selector-flag {
+    cursor: pointer;
+}
+.cv__navbar-language-selector-flag img {
+    width: 50px;
+    opacity: 1;
+
+}
 .dot {
     height: 11px;
     width: 11px;
@@ -37,6 +60,7 @@
 }
 .cv__navbar-links__container-icon {
     color: #fff;
+    /* color: var(--color-navbaricon); */
     line-height: 1.7;
     height: 50px;
     display: flex;
@@ -47,6 +71,7 @@
     display: flex;
     align-items: center;
     font-size: 18px;
+    width: 100%;
     font-weight: 300;
     height: 50px !important;
 }
@@ -90,20 +115,25 @@
     cursor: pointer;
     height: auto;
 }
+.cv__navbar-links__container-icon.active a {
+    color: var(--color-navbaricon); /* Your desired color for active links */
+  }
+
+
 
 @media screen and (max-width: 1000px) {
     .cv__navbar-logo-desktop {
         display: none;
     }
     .cv__navbar-desktop__container {
-      /* display: none; */
-      background-color: var(--gradient-bar);
-      width: 220px;
-      display: flex;
-      position: fixed;
-      transform: translateX(-220px);
-    transition: all .3s ease-in-out;
-    z-index: 155;
+        background: radial-gradient(circle at 0% 4%, rgba(120, 120, 120, 0.1) 0%, rgba(77, 77, 77, 0.4) 7%, rgba(51, 51, 51, 0.7) 36%);
+        width: 220px;
+        top: 0; /* Attach to top */
+        left: 0; /* Attach to left */
+        position: fixed;
+        transform: translateX(-220px);
+        transition: all .3s ease-in-out;
+        z-index: 155;
     }
     .cv__navbar-links__container {
         justify-content: center;
@@ -112,7 +142,9 @@
         left: 25%;
     }
     .cv__navbar-mobile__container {
-        display: block;
+        display:block;
+        position: fixed;
+
         z-index: 555;
     }
     .cv__header{

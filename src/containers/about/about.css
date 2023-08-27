@@ -1,0 +1,193 @@
+
+.cv__about__container {
+    margin: 0 5rem;
+    /* max-width: 1080px; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.cv__about__container__aboutme-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    width: 100%;
+    height: 50%;
+    margin-left: -15px;
+    margin-bottom: 30px;
+}
+.cv__about__container__aboutme-info-image{
+    flex: 0 0 25%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: center!important;
+
+}
+.cv__about__container__aboutme-info-image img {
+    height: 150px;
+}
+
+.cv__about__container__aboutme-info-text {
+    flex: 0 0 70%;
+    max-width: 70%;
+    position: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.cv__about__container__aboutme-info-text::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 15px solid var(--color-cloud);
+    position: absolute;
+    left: 0;
+    top: 20%;
+}
+
+
+
+.cv__about__container__aboutme-info-text-cloud__box {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.cv__about__container__aboutme-info-text-cloud__box-aboutme {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+}
+.cv__about__container__aboutme-info-text-cloud__box-aboutme p {
+    color: var(--color-subtext);
+    font-family: var(--font-family);
+    letter-spacing: 0.04em;
+    font-weight: 500;
+}
+.cv__about__container__aboutme-info-text-cloud__box-aboutme-cv {
+    margin-top: 20px;
+}
+.cv__about__container__aboutme-info-text-cloud__box-lines {
+    flex: 0 0 50%;
+    max-width: 50%;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-info h4 {
+    float: left;
+}
+.cv__about__container__aboutme-info-text-cloud__box-lines-skill-item {
+    display: flex;
+    flex-direction: column;
+    max-height: 80px;
+}
+.cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-info {
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    font-family: var(--font-family);
+    margin-bottom: 10px;
+}
+.cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-info span {
+    float: right;
+    font-size: 14px;
+    font-family: var(--font-family-rubik);
+}
+.cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-progress{
+    height: 7px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--color-progress);
+}
+.cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-progress-bar{
+    display: flex;
+    float: left;
+    width: 50px;
+    font-size: 12px;
+    height: 7px;
+    color: #fff;
+    text-align: center;
+    transition: width .6s ease;
+    border-radius: 15px;
+
+}
+
+@media screen and (max-width: 1000px) {
+    .cv__about__container__aboutme-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cv__about__container__aboutme-info-text {
+        min-width: 80%;
+    }
+    .cv__about__container__aboutme-info-image {
+        margin-bottom: 20px;
+        min-width: 150px !important;
+    }
+    .cv__about__container__aboutme-info-text::before{
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        transform: translateX(-7.5px);
+    }
+
+    .cv__about__container {
+        margin: 0 2rem;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .cv__about__container__aboutme-info-text {
+        min-width: 90% !important;
+    }
+    .cv__about__container__aboutme-info-image{
+        max-width: 100%;
+    }
+    .cv__about__container__aboutme-info-image img {
+        height: 120px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .cv__about__container__aboutme-title, .cv__about__container__aboutme-dots {
+        margin-left: 5%;
+    }
+    .cv__about__container__aboutme-info-text {
+        min-width: 100% !important;
+    }
+    .cv__about__container__aboutme-info-text-cloud__box {
+        flex-direction: column;
+    }
+    .cv__about__container__aboutme-info-text-cloud__box-aboutme {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .cv__about__container__aboutme-info-text-cloud__box-lines {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .cv__about__container__aboutme-info-text-cloud__box-aboutme-cv {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .cv__about__container__aboutme-info-image img {
+        float: right;
+    }    
+}
