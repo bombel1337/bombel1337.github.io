@@ -114,6 +114,7 @@
     width: 30px;
     cursor: pointer;
     height: auto;
+    color: var(--color-bg);
 }
 .cv__navbar-links__container-icon.active a {
     color: var(--color-navbaricon); /* Your desired color for active links */
@@ -161,6 +162,9 @@
     .cv__navbar-copyrights p {
         font-size: 10px;
     }
+        .cv__navbar-logo {
+            display: none;
+        }
     .btn  {
         padding: 10px 22px;
         font-size: 14px;

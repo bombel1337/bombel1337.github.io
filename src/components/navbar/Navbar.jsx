@@ -154,7 +154,7 @@ const Navbar = () => {
         {toggleMenu ?  <RiCloseLine className='cv__navbar-mobile__container-close' color="#fff" size={27} onClick={()=> {
           setToggleMenu(false)
         }} /> 
-          : <RiMenu3Line className='cv__navbar-mobile__container-burger' color="#fff" size={27} onClick={()=> setToggleMenu(true)} /> 
+          : <RiMenu3Line className='cv__navbar-mobile__container-burger' size={27} onClick={()=> setToggleMenu(true)} /> 
           }
           {/* {toggleMenu && (
             <div className='cv__navbar-menu_container scale-up-center'>
