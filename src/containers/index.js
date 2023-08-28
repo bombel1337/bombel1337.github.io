@@ -32,6 +32,9 @@ import projects_image_6 from "../assets/projects_image_6.png"
 
 
 
+import selfie_image_1 from "../assets/photo1.jpg"
+import selfie_image_2 from "../assets/photo2.jpg"
+
 
 
 // https://www.online-image-editor.com/?language=polish
@@ -74,6 +77,11 @@ const projectsImages = {
     projects_image_6
 }
 
+const selfieImages = {
+    selfie_image_1,
+    selfie_image_2
+}
+
 
 export { default as Header } from './header/Header'
 export { default as About } from './about/About'
@@ -81,4 +89,4 @@ export { default as Services } from './services/Services'
 export { default as Experience } from './experience/Experience'
 export { default as Projects } from './projects/Projects'
 export { default as Contact } from './contact/Contact'
-export default { images, serviceImages, experienceImages, projectsImages }; // Export the image objects
+export default { images, serviceImages, experienceImages, projectsImages, selfieImages }; // Export the image objects

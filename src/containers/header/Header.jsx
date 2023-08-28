@@ -11,7 +11,6 @@ import Social from '../../components/social/Social'
 
 import imageExports from '../index'; // Adjust the path accordingly
 
-import avatar from '../../assets/header_avatar.svg';
 
 import { FaFacebookSquare } from 'react-icons/fa'
 import { BsInstagram, BsTwitter, BsLinkedin, BsGithub } from 'react-icons/bs'
@@ -51,7 +50,10 @@ const Header = () => {
       <div className="cv__header-container scale-up-center">
         <div className="cv__header-container-info">
           <div className="cv__header-container-info-avatar">
-            <img src={avatar} alt="Jacob" />
+            <img src={imageExports.selfieImages.selfie_image_2} 
+              width="150px"
+              style={{borderRadius:"50px"}}
+            alt="Jacob" />
           </div>
           <div className="cv__header-container-info-text">
            <h1>Jakub  Przygoda</h1>
@@ -73,7 +75,9 @@ const Header = () => {
            ))}
           </div>
           <div className='cv__header-container-info-hire-me scale-up-center'>
+            <a href="#contact">
               <button className='btn from-top' type='button'>{t("header_hire-me")}</button>
+              </a>
           </div> 
         </div>
         <div className="cv__header-container-scroll">

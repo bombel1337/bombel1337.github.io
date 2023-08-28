@@ -8,8 +8,8 @@ import { FiUsers } from "react-icons/fi"
 import { PiCoffee } from "react-icons/pi"
 
 import { useTranslation } from 'react-i18next'
-import avatar from '../../assets/header_avatar.svg';
 
+import myCVPDF from './CV_Jakub_Przygoda.pdf';
 
 import images from '../index.js';
 
@@ -17,7 +17,6 @@ import images from '../index.js';
 
 const About = () => {
   const { t } = useTranslation();
-  console.log(images.about_dots);
   const tileData = [
     { icon:AiOutlineFire, titleText:"projects", subText:"projects"},
     { icon:PiCoffee, titleText:"coffee", subText:"coffee" },
@@ -33,7 +32,7 @@ const About = () => {
           <div className="spacer" data-height="60"></div>
           <div className="cv__about__container__aboutme-info">
             <div className="cv__about__container__aboutme-info-image">
-                <img src={avatar} alt="about_Jacob" />
+                <img src={images.selfieImages.selfie_image_1} alt="about_Jacob" />
             </div>
             <div className="cv__about__container__aboutme-info-text">
                 <div className="cv__about__container__aboutme-info-text-cloud cloud-tile">
@@ -41,7 +40,14 @@ const About = () => {
                     <div className="cv__about__container__aboutme-info-text-cloud__box-aboutme">
                     <p>{t('about_maintext')}</p>
                     <div className="cv__about__container__aboutme-info-text-cloud__box-aboutme-cv">
+                    <a
+                      href={myCVPDF}
+                      download="My CV Document"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <button type="button" className="btn from-top">{t('about_cv_download')}</button>
+                      </a>
                     </div>
                     </div>
                     <div className="cv__about__container__aboutme-info-text-cloud__box-lines">
@@ -76,12 +82,12 @@ const About = () => {
                         <div className="cv__about__container__aboutme-info-text-cloud__box-lines-skill-item">
                             <div className="cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-info">
                               <h4>Back-End</h4>
-                              <span>50%</span>
+                              <span>80%</span>
                             </div>
                             <div className="cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-progress">
                                 <div style={{
                                 background:"rgb(255, 76, 96)",
-                                width:"50%"
+                                width:"80%"
                               }}
                               className="cv__about__container__aboutme-info-text-cloud__box-lines-skill-item-progress-bar">
 

@@ -26,6 +26,7 @@
 }
 .cv__about__container__aboutme-info-image img {
     height: 150px;
+    border-radius: 50px;
 }
 
 .cv__about__container__aboutme-info-text {
@@ -118,6 +119,11 @@
     transition: width .6s ease;
     border-radius: 15px;
 
+}
+@media screen and (max-width: 1300px) {
+    .cv__about__container {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 1000px) {
