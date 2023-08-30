@@ -120,8 +120,8 @@
 }
 @media screen and (max-width: 1000px) {
     .cv__projects__container__projects-tile {
-        flex: 1 0 43%;
-        max-width: 43%;
+        flex: 1 0 44%;
+        max-width: 44%;
         margin: 15px;
     }
     .cv__projects__container__projects {

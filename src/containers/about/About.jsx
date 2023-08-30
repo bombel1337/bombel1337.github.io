@@ -9,7 +9,7 @@ import { PiCoffee } from "react-icons/pi"
 
 import { useTranslation } from 'react-i18next'
 
-import myCVPDF from './CV_Jakub_Przygoda.pdf';
+import myCVPDF from './Jakub_Przygoda_CV.pdf';
 
 import images from '../index.js';
 
