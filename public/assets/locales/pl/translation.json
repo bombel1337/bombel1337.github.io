@@ -56,7 +56,7 @@
     "projects_project_language_2":"Nodejs",
     "projects_project_title_2":"Projekt w Node.js z bazą danych i serwerem backendowym zintegrowanym z przeszukiwarkami w celu zbierania i filtrowania danych z wielu witryn.",
     "projects_project_language_3":"Electron",
-    "projects_project_title_3":"Aplikacja umożliwiająca korzystanie z sesji PayPal 24/7 bez wylogowywania się. Stworzona do automatycznego płacenia 24/7 za zamówienia na podstawie Discord API z połączonymi kanałami.",
+    "projects_project_title_3":"Aplikacja umożliwiająca rejestrowanie zawartości ekranu lub dowolnej wybranej aplikacji z opcją nagrywania dźwięku lub bez niego. Dodatkowo oferuje możliwość planowanego uruchamiania i zatrzymywania nagrywania o dowolnej wybranej godzinie.",
     "projects_project_language_4":"Javascript",
     "projects_project_title_4":"Kilka rozszerzeń dla przeglądarki Google Chrome podłączonych do różnych interfejsów API i systemów licencjonowania opartych na żądaniach w celu automatyzacji doświadczenia użytkownika.",
     "projects_project_language_5":"Golang",

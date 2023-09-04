@@ -56,7 +56,7 @@
     "projects_project_language_2":"Nodejs",
     "projects_project_title_2":"Nodejs project with database and backend server integrated with scrapers to colllect and filter data throughout many websites.",
     "projects_project_language_3":"Electron",
-    "projects_project_title_3":"App that allows using Paypal session 24/7 without being logged off. It was made to pay automatically 24/7 for orders based on Discord APi with connected channels.",
+    "projects_project_title_3":"The application that allows for capturing the content of the screen or any selected application with the option to record audio or without it. Additionally, it offers the ability to schedule the start and stop of recording at any chosen time.",
     "projects_project_language_4":"Javascript",
     "projects_project_title_4":"Few google chrome extensions connected with different APIs and License systems based on requests in order to automatize user experience.",
     "projects_project_language_5":"Golang",
