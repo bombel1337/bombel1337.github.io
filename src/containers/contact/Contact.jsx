@@ -32,6 +32,12 @@ const Contact = () => {
           html: <i>{t('contact_email_send_success_html')}</i>,
           icon: 'success'
         })
+      } else {
+        MySwal.fire({
+          title: <strong>{t('contact_email_send_error_title')}</strong>,
+          html: <i>{t('contact_email_send_error_html')}</i>,
+          icon: 'error'
+        })
       }
     })
     .catch((error) => {

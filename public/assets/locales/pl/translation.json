@@ -69,7 +69,9 @@
     "contact_placeholder_inputname":"Imię",
     "contact_placeholder_message":"Wiadomość",
     "contact_email_send_success_title":"Dziękuje!",
-    "contact_email_send_success_html":"Otrzymałem twój email."
+    "contact_email_send_success_html":"Otrzymałem twój email.",
+    "contact_email_send_error_title":"Oops...",
+    "contact_email_send_error_html":"Coś poszło nie tak!"
 
 
 

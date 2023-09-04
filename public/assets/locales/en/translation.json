@@ -69,7 +69,9 @@
     "contact_placeholder_inputname":"Name",
     "contact_placeholder_message":"Message",
     "contact_email_send_success_title":"Thank you!",
-    "contact_email_send_success_html":"I have received your email."
+    "contact_email_send_success_html":"I have received your email.",
+    "contact_email_send_error_title":"Oops...",
+    "contact_email_send_error_html":"Something went wrong!"
 
 
 }
